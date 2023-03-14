@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindu Bhajan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: auto;
+            background: #fc9494;
+        }
+
+        .box {
+            position: relative;
+            width: 186px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(0, 0, 0);
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .box::before {
+            content: '';
+            position: absolute;
+            width: 75px;
+            height: 140%;
+            background: linear-gradient(#00ccff, #d400d4);
+            animation: animate 4s linear infinite;
+        }
+
+        .box::after {
+            content: '';
+            position: absolute;
+            inset: 5px;
+            background: #fff;
+            border-radius: 16px;
+            background-image: url("om.webp");
+            background-size: cover;
+            background-position: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (max-width:400px) {
+            .box {
+                position: relative;
+                width: 135px;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgba(0, 0, 0, 0.5);
+                overflow: hidden;
+                border-radius: 20px;
+            }
+
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <br>
+    <div class="section1">
+        <div class="box"></div>
+    </div>
+    <br>
+    <div class="section2">
+        <div class="block"><h2><a href="index2.html">Bhagvan Brahma</a></h2></div>
+        <div class="block"><h2><a href="index3.html">Bhagvan Vishnu</a></h2></div>
+        <div class="block"><h2><a href="index4.html">Bhagvan shiv</a></h2></div>
+        <div class="block"><h2><a href="index5.html">Maa Durga</a></h2></div>
+        <div class="block"><h2><a href="index6.html">Bhagvan Ganesh</a></h2></div>
+        <div class="block"><h2><a href="index7.html">Bhagvan Surya</a></h2></div>
+    </div>
+</body>
+
+</html>
